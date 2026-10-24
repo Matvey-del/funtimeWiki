@@ -1,0 +1,9 @@
+{
+  "name": "funtime-community-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FUN TIME website with server-side accounts and shared Wiki",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
