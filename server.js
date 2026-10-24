@@ -6,7 +6,7 @@ const { URL } = require('node:url');
 const PORT = Number(process.env.PORT || 3000);
 const HOST = process.env.HOST || '0.0.0.0';
 const ROOT = __dirname, DATA_DIR = path.join(ROOT, 'data'), DB_FILE = path.join(DATA_DIR, 'db.json'), UPLOAD_DIR = path.join(DATA_DIR,'uploads');
-fs.mkdirSync(UPLOAD_DIR,{recursive:true}); const OWNER_EMAIL=String(process.env.OWNER_EMAIL||'').trim().toLowerCase();
+fs.mkdirSync(UPLOAD_DIR,{recursive:true}); const OWNER_EMAIL=String(process.env.OWNER_EMAIL||'matvej45kuzeli@gmail.com').trim().toLowerCase();
 fs.mkdirSync(DATA_DIR, {recursive:true});
 const starterPosts = [
 {id:'starter1',title:'Как начать играть на FUN TIME',category:'Гайды',text:'1. Запусти Minecraft подходящей версии.\n2. Добавь сервер в список мультиплеера.\n3. Укажи адрес funtime.su и подключись.\n\nЕсли не получается зайти, проверь версию игры и сообщение об ошибке.',author:'FUN TIME',authorId:null,date:'Стартовая статья',starter:true},
